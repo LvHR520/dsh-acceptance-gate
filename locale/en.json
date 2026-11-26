@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Acceptance gate",
+    "description": "Runs the workspace acceptance script before the present tool and blocks delivery when it fails.",
+    "detail": "docs/DETAIL.md"
+  }
+}

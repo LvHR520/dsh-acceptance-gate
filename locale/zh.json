@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "交付闸门",
+    "description": "在 present 之前跑一次工作区验收脚本，验收不过就拦住交付。",
+    "detail": "docs/DETAIL.md"
+  }
+}
