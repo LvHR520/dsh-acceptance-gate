@@ -21,8 +21,12 @@
 
 ## 配置
 
-无需配置。若要把验收脚本换到别处，在插件行的 `config` 里不支持，只能改环境变量
-`DSH_GATE_TARGET`（宿主进程启动时读取），或改 `index.js` 里的 `WORKSPACE` / `TARGET`。
+默认工作区取宿主进程的当前目录，验收脚本取 `<工作区>\tools\test.ps1`。两处都能用环境变量覆盖：
+
+- `DSH_GATE_WORKSPACE`：判定「哪些 `present` 归本闸门管」的工作区根目录。
+- `DSH_GATE_TARGET`：验收脚本的完整路径。
+
+环境变量在宿主进程启动时读取。
 
 ## 已知限制
 

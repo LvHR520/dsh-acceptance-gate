@@ -11,7 +11,7 @@ import { spawn } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import path from 'node:path'
 
-const WORKSPACE = 'D:\\AI工作区\\AI任务'
+const WORKSPACE = (process.env.DSH_GATE_WORKSPACE || process.cwd()).trim()
 const TARGET = (process.env.DSH_GATE_TARGET || path.join(WORKSPACE, 'tools', 'test.ps1')).trim()
 const PRESENT_TOOL = 'present'
 const TIMEOUT_MS = 180_000

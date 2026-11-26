@@ -41,9 +41,13 @@
 
 ## 配置
 
-默认跑工作区根目录下的 `tools/test.ps1`。要换位置，设置环境变量 `DSH_GATE_TARGET`（宿主进程启动时读取）：
+默认工作区是宿主进程的当前目录，验收脚本是 `<工作区>\tools\test.ps1`。两个都能用环境变量覆盖（宿主进程启动时读取）：
 
 ```powershell
+# 限定哪些 present 归这个闸门管
+$env:DSH_GATE_WORKSPACE = 'D:\AI工作区\AI任务'
+
+# 换一个验收脚本
 $env:DSH_GATE_TARGET = 'D:\somewhere\my-acceptance.ps1'
 ```
 
