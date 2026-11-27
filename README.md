@@ -45,7 +45,7 @@
 
 ```powershell
 # 限定哪些 present 归这个闸门管
-$env:DSH_GATE_WORKSPACE = 'D:\AI工作区\AI任务'
+$env:DSH_GATE_WORKSPACE = 'D:\work\demo'
 
 # 换一个验收脚本
 $env:DSH_GATE_TARGET = 'D:\somewhere\my-acceptance.ps1'
